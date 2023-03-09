@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+a{
+	text-decoration: none;
+	color: unset;
+}
+.dfr{
+	display: flex;
+	flex-direction: row;
+}
+.dfc{
+	display: flex;
+	flex-direction: column;
+}
+.dgc{
+	display: grid;
+	place-content: center;
+}
+/* Pour faire la cadre gradient */
+.borderSytle {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;	
+	background: linear-gradient(
+		135deg,
+		rgb(88, 56, 209), 
+		rgb(56, 166, 221) 12% ,
+		rgb(50 ,50 ,50) 17.5%, 
+		rgb(50 ,50 ,50) 82.5%, 
+		rgb(56, 166, 221) 90%,
+		rgb(88, 56, 209)
+	);
+	position: absolute;
+  }
+.p1Contenair{
+	background-color: rgb(50, 50, 50);
+	width: 97.5vw;
+	height: 97.5vh;
+	margin: auto;
+	border-radius: .5em;
+
+}
+/* barre de navigation */
+.navBar{
+	width: 100%;
+	height: 10vh;
+}
+.title{
+	flex: 5;
+	position: relative;
+	padding-left: 6em;
+	padding-top: 1em;
+	font-family: "Poppins", sans-serif;
+}
+.title h2 {
+	font-size: 2em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+  }
+  
+  .title h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px rgb(56, 221, 174);
+  }
+  
+  .title h2:nth-child(2) {
+	color: rgb(56, 221, 174);
+	animation: animatetitle 4s ease-in-out infinite;
+  }
+.connexion{
+	flex: 4;
+	justify-content: space-around;
+	margin: auto;
+}
+.connexion a {
+	color: aliceblue ;
+	font-size: 1em;
+}
+/* contenue */
+.content{
+	width: 100%;
+    height: max-content;
+	color: aliceblue;
+	height: 85vh;
+}
+	/* partie gauche */
+.lContent{
+	flex: 3;
+}
+		/* animation 'type writer' */
+.typeWriter{
+	display: flex;
+	margin: auto;
+	width: max-content;
+}
+.typeWriter h1 {
+	width: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: typing 2s steps(30,end);
+	background-image: linear-gradient(
+    -225deg,
+    rgb(88, 56, 209) 0%,    
+    rgb(56, 166, 221) 37%,
+    rgb(56, 221, 174) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+		/* animation bienvenue */
+.helloWord{
+	font-family: "Poppins", sans-serif;
+	font-size: 5rem;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.animationText{
+	height: 150px;
+	overflow: hidden;
+	margin-left: 1rem;
+}
+.animationText > p > p {
+	padding: 1rem;
+	height: 2.81rem;
+	margin-bottom: 2.81rem;
+
+}
+.animationText p:first-child{
+	animation: textAnimation 10s infinite;
+}
+.txtAnim{
+	border-radius: .5em;
+	padding: .1em;
+	text-align: center;
+	cursor: default;
+}
+.first{
+	background-color: rgb(88, 56, 209);
+}
+.second{
+	background-color: rgb(56, 166, 221);
+}
+.third{
+	background-color: rgb(56, 221, 174);
+}
+		/* bordure gauche de la partie desciprion */
+.descriptionBG{
+	background: linear-gradient(
+		1deg,
+		rgb(88, 56, 209), 
+		rgb(56, 166, 221),
+		rgb(56, 221, 174)
+	);
+	max-height: 100%;
+	border-radius: .2em;
+	width: 50vw;
+	margin-left: 2em;
+}
+		/* contenue de la description */
+.descriContenair{
+	background-color: rgb(50, 50, 50);
+	margin-left: .5em;
+	margin-top: 1em;
+	max-height: 75vh;
+	padding-left: 1em;
+	padding-right: 1em;
+	overflow-y: auto;
+	overflow-x: hidden;
+	overflow-wrap: break-word;
+}
+.description{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+		/* mise en page competence et expériences projet */
+.comContenair{
+	gap: .5em;
+}
+.comTitle{
+	font-style: italic;
+	background-color: aliceblue;
+	color: rgb(50 ,50 ,50);
+	border-bottom-right-radius: 5em;
+	width: fit-content;
+	padding-right: 1.5em;
+	cursor: pointer;
+	border: none;
+}
+.comTitle:hover, .comTitle:focus, .comTitle::after{
+	zoom: 125%;
+}
+.com:hover, .com:focus, .com:active{
+	background-color: rgb(56, 221, 174);
+}
+.exp:hover, .exp:focus, .exp:active{
+	background-color: rgb(56, 166, 221);
+}
+.cer:hover, .cer:focus, .cer:active{
+	background-color: rgb(111, 84, 209);
+}
+.descriLi{
+	margin: 1em;
+}
+.certContenair{
+	text-align: center;
+	padding-bottom: 1em;
+}
+.certificat{
+	width: 40vw;
+}
+	/* Partie droite */
+.rContent{
+	flex: 3;
+}
+.logo{
+	width: 12.5vw;
+	height: 25vh;
+	margin-right: 5em;
+}
+		/* mise en page de la partie droite */
+.about{
+	font-family: "Poppins", sans-serif;
+	cursor: default;
+  background-image: linear-gradient(
+    -225deg,
+    rgb(88, 56, 209) 0%,    
+    rgb(56, 166, 221) 10%,
+    rgb(56, 221, 174) 20%,
+	rgb(56, 166, 221) 30%,
+	rgb(88, 56, 209) 40%,    
+    rgb(56, 166, 221) 50%,
+    rgb(56, 221, 174) 60%,
+	rgb(56, 166, 221) 70%,
+	rgb(88, 56, 209) 80%,
+    rgb(56, 166, 221) 90%,
+    rgb(56, 221, 174) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.about:hover{
+	animation: textclip 5s linear infinite;
+}
+.aboutContenair{
+	gap:3.5em;
+	margin: 4rem;
+	width: 50%;
+	/* justify-content: center;
+	display: flex;
+	height: 60vh; */
+}
+	/* mise en forme et animation des boutons */
+.aboutTxt{
+	padding: 1em;
+	border-radius: .2em;
+	text-align: center;
+	color: aliceblue;
+	cursor: pointer;
+	border: 0px;
+	font-size: 1em;
+	background: linear-gradient(
+		315deg,
+		rgb(88, 56, 209), 
+		rgb(56, 166, 221),
+		transparent 10%,
+		transparent 90%, 
+		rgb(56, 166, 221),
+		rgb(88, 56, 209)
+	);
+	transition: font-size 1s ease-out !important;
+}
+.aboutTxt:hover, .aboutTxt:focus, .about:active{
+	background: linear-gradient(
+		90deg,
+		rgb(88, 56, 209), 
+		rgb(56, 166, 221)
+	);
+	font-size: 1.25em;
+}
+
+/* bas de la page */
+.footer{
+	text-align:center;
+	margin: 1em;
+	color: aliceblue;
+}
+/* animation */
+@keyframes textclip {
+	to {
+	  background-position: 200% center;
+	}
+  }
+  @keyframes animatetitle {
+	0%,
+	100% {
+	  clip-path: polygon(
+		0% 45%,
+		16% 44%,
+		33% 50%,
+		54% 60%,
+		70% 61%,
+		84% 59%,
+		100% 52%,
+		100% 100%,
+		0% 100%
+	  );
+	}
+  
+	50% {
+	  clip-path: polygon(
+		0% 60%,
+		15% 65%,
+		34% 66%,
+		51% 62%,
+		67% 50%,
+		84% 45%,
+		100% 46%,
+		100% 100%,
+		0% 100%
+	  );
+	}
+  }
+  @keyframes textAnimation {
+	0%{
+		margin-top: 0;
+	}
+	10%{
+		margin-top: -2;
+	}
+	20%{
+		margin-top: -11rem;
+	}
+	30%{
+		margin-top: -10rem;
+	}
+	40%{
+		margin-top: -22rem;
+	}
+	50%{
+		margin-top: -21rem;
+	}
+	60%{
+		margin-top: -10rem;
+	}
+	70%{
+		margin-top: -11rem;
+	}
+	80%{
+		margin-top: 0;
+	}
+	90%{
+		margin-top: -2;
+	}
+	100%{
+		margin-top: 0;
+	}
+}
+  @keyframes typing {
+	from { width: 0}
+	to { width: 100%}
+  }
+  /* responsivité */
+  @media only screen and (max-width: 1025px){
+	.comTitle:hover, .comTitle:focus, .comTitle::after{
+		zoom: 110%;
+	}
+	.aboutContenair{
+		gap: 1em;
+	}
+	.typeWriter h1 {
+		font-size: 1.5em;
+	}
+  }
+
+  @media only screen and (max-width: 767px){
+	.navBar{
+		height: 5vh;
+	}
+	.title{
+		padding-left: 4em;
+		padding-top: 0;
+		flex: 3;
+	}
+	.connexion a {
+		font-size: .5em;
+	}
+	.title h2{
+		font-size: 1.5em;
+	}
+	.helloWord{
+		font-size: 2rem;
+		height: 40vh;
+	}
+	.animationText{
+		height: 60px;
+	}
+	@keyframes textAnimation {
+		0%{
+			margin-top: 0;
+		}
+		10%{
+			margin-top: -2;
+		}
+		20%{
+			margin-top: -4.5rem;
+		}
+		30%{
+			margin-top: -4rem;
+		}
+		40%{
+			margin-top: -9rem;
+		}
+		50%{
+			margin-top: -8.5rem;
+		}
+		60%{
+			margin-top: -4rem;
+		}
+		70%{
+			margin-top: -4.5rem;
+		}
+		80%{
+			margin-top: 0;
+		}
+		90%{
+			margin-top: -2;
+		}
+		100%{
+			margin-top: 0;
+		}
+	}
+	.typeWriter h1{
+		letter-spacing: .05em;
+		font-size: 1em;
+	}
+	.descriptionBG{
+		margin-left: .5em;
+	}
+	.descriContenair{
+		margin-left: .25em;
+	}
+	.description{
+		font-size: .75em;
+	}
+	.rContent{
+		height: 80vh;
+		justify-content: center;
+		gap: 3em;
+	}
+	.logo{
+		margin: 0;
+		height: 15vh;
+		width: 10vw;
+	}
+	.about{
+	font-size: 1em;
+	}
+	.aboutContenair{
+		gap: 1em;
+		margin: 1em;
+	}
+	.aboutTxt{
+		font-size: .75em;
+	}
+	.aboutTxt:hover, .aboutTxt:focus, .about:active{
+		font-size: 1em;
+	}
+	.comTitle{
+		font-size: .35em;
+	}
+	.subtitle{
+		font-size: 1em;
+	}
+  }
+  
+  @media only screen and (max-width:376px) {
+	.typeWriter h1{
+		font-size: .75em;
+	}
+	.aboutTxt{
+		width: 120px;
+	}
+  }
+
+  @media only screen and (max-width: 281px){
+	.helloWord{
+		font-size: 1rem;
+		height: 30vh;
+	}
+	.animationText{
+		height: 30px;
+	}
+	.descriptionBG{
+		width: 41vw;
+	}
+	@keyframes textAnimation {
+		0%{
+			margin-top: 0;
+		}
+		10%{
+			margin-top: -2;
+		}
+		20%{
+			margin-top: -2.2rem;
+		}
+		30%{
+			margin-top: -2rem;
+		}
+		40%{
+			margin-top: -4.4rem;
+		}
+		50%{
+			margin-top: -4rem;
+		}
+		60%{
+			margin-top: -2rem;
+		}
+		70%{
+			margin-top: -2.2rem;
+		}
+		80%{
+			margin-top: 0;
+		}
+		90%{
+			margin-top: -2;
+		}
+		100%{
+			margin-top: 0;
+		}
+	}
+	.lContent{
+		flex: 3;
+	}
+	.rContent{
+		flex: 1;
+	}
+	.aboutTxt {
+		width: 95px;
+		font-size: .5em;
+	}
+	.aboutTxt:hover, .aboutTxt:focus, .about:active{
+		font-size: .75em;
+	}
+	.typeWriter h1 {
+		font-size: .5em;
+		margin-top: 1em;
+	}
+	.description {
+		font-size: .5em;
+	}
+	.descriContenair {
+		width: 35vw;
+	}
+  }
