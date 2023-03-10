@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.626e1d8d.css",
-    "main.js": "/Portfolio/static/js/main.8b58f1d7.js",
-    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/E-Learning.PNG": "/Portfolio/static/media/E-Learning.a88235b1b128c6f1656a.PNG",
-    "static/media/JSCertificate.PNG": "/Portfolio/static/media/JSCertificate.e81464e2166e037d17ee.PNG",
-    "static/media/CV_Tombontsoaniaina_Princy2.pdf": "/Portfolio/static/media/CV_Tombontsoaniaina_Princy2.25a1204e7d5c9002cf07.pdf",
-    "static/media/LogoLight.png": "/Portfolio/static/media/LogoLight.1d48822645c8b36ec6cf.png",
-    "index.html": "/Portfolio/index.html",
-    "main.626e1d8d.css.map": "/Portfolio/static/css/main.626e1d8d.css.map",
-    "main.8b58f1d7.js.map": "/Portfolio/static/js/main.8b58f1d7.js.map",
-    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/static/css/main.626e1d8d.css",
+    "main.js": "/static/js/main.38fad20c.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/E-Learning.PNG": "/static/media/E-Learning.a88235b1b128c6f1656a.PNG",
+    "static/media/JSCertificate.PNG": "/static/media/JSCertificate.e81464e2166e037d17ee.PNG",
+    "static/media/CV_Tombontsoaniaina_Princy2.pdf": "/static/media/CV_Tombontsoaniaina_Princy2.25a1204e7d5c9002cf07.pdf",
+    "static/media/LogoLight.png": "/static/media/LogoLight.1d48822645c8b36ec6cf.png",
+    "index.html": "/index.html",
+    "main.626e1d8d.css.map": "/static/css/main.626e1d8d.css.map",
+    "main.38fad20c.js.map": "/static/js/main.38fad20c.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.626e1d8d.css",
-    "static/js/main.8b58f1d7.js"
+    "static/js/main.38fad20c.js"
   ]
 }
