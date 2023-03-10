@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://tombontsoa.github.io/",
+  "homepage": "https://tombontsoa.github.io",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.9.3",
