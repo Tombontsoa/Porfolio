@@ -8,7 +8,13 @@ const App = () =>{
     <BrowserRouter>
       <Routes>
         <Route
-          path=""
+          path="/Portfolio"
+          element={<FirstPage/>}
+        />
+      </Routes>
+      <Routes>
+        <Route
+          path="/"
           element={<FirstPage/>}
         />
       </Routes>
