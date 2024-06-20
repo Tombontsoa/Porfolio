@@ -10,7 +10,7 @@ function NavBar () {
     return(
         <>
             <div className="title">
-                <Link to="">
+                <Link to="/">
                     <h2>Portfolio.</h2>
                     <h2>Portfolio.</h2>
                 </Link>
