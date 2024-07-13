@@ -9,8 +9,8 @@ import FigmaLogo from '../Media/Figma.png'
 import TrelloLogo from '../Media/Trello.png'
 import PodioLogo from '../Media/Podio.png'
 import ReactLogo from '../Media/React.png'
-import CertificateJS from "../Media/JSCertificate.PNG"
-import FrontEndAwardImg from "../Media/FrontendAward.jpg"
+import CertificateJS from "../Media/JSCertificate.webp"
+import FrontEndAwardImg from "../Media/FrontendAward.webp"
 
 import SkillsForm from "./SkilksForm";
 import ExpérienceForm from "./ExperienceForm";

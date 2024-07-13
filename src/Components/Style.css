@@ -436,7 +436,7 @@ footer{
 		font-size: 2rem;
 	}
 	.animationText{
-		height: 40px;
+		height: 60px;
 	}
 	@keyframes textAnimation {
 		0%{
