@@ -9,6 +9,7 @@ import FigmaLogo from '../Media/Figma.png'
 import TrelloLogo from '../Media/Trello.png'
 import PodioLogo from '../Media/Podio.png'
 import ReactLogo from '../Media/React.png'
+import NuxtLogo from '../Media/NuxtJS.png'
 import CertificateJS from "../Media/JSCertificate.webp"
 import FrontEndAwardImg from "../Media/FrontendAward.webp"
 
@@ -20,7 +21,7 @@ function Skills() {
     const [skillAndExp,setSkillAndExp] = useState('')
     let logoSkillsList = [HTMLLogo,CSSLogo,JSLogo,PHPLogo]
     let logoToolsList = [GitHubLogo,FigmaLogo,TrelloLogo,PodioLogo]
-    // let logoFrameworksList = [HTMLLogo]
+    let logoFrameworksList = [ReactLogo,NuxtLogo]
     // let expImg = [HTMLLogo]
     // let certImg = [CertificateJS]
     // let certLink  = ['https://www.codingame.com/certification/qZJZIk_lPM5CDVpEmRO06w']
@@ -54,17 +55,15 @@ function Skills() {
                     </div>
                     <h1 className="subtitle">Framework(s) :</h1>
                     <div className="skillContent dfr">
-                    {/* {['ReactJS'].map((framework,ind)=>(
-                        <SkillsForm 
-                            key={framework} 
-                            skills={framework} 
-                            logo={logoFrameworksList[ind]} 
-                        />
-                    ))} */}
-                        <SkillsForm 
-                            skills='ReactJS' 
-                            logo={ReactLogo} 
-                        />
+                    {['ReactJS','NuxtJS'].map((framework,ind)=>(
+                        <>
+                            <SkillsForm 
+                                key={framework} 
+                                skills={framework} 
+                                logo={logoFrameworksList[ind]} 
+                            />
+                        </>
+                    ))}
                     </div>
                     </>
                 ) : skillAndExp === 'exp' ? (
